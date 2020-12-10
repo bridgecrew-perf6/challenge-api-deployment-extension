@@ -8,7 +8,7 @@ def read_immo_table_TEST():
     connection = sqlite3.connect('immo_data_TEST.db')
     cursor = connection.cursor()
 
-    cursor.execute('SELECT * FROM immoTEST')
+    cursor.execute("SELECT * FROM immoTEST")
     immo_table_TEST = [row for row in cursor.fetchall()]
 
     connection.close()
@@ -25,10 +25,11 @@ def read_immo_table():
     connection = sqlite3.connect('immo_data.db')
     cursor = connection.cursor()
 
-    cursor.execute('SELECT * FROM immo')
+    cursor.execute("SELECT * FROM immo")
     immo_table = [row for row in cursor.fetchall()]
 
     connection.close()
+
 
     ## RETURN THE TABLE TO THE CALLING FILE ##
     ##########################################

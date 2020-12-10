@@ -1,4 +1,4 @@
-# challenge-api-deployment
+# challenge-api-deployment-extension
 
 ### Introduction:
 This project is an BeCode Bouman group challange for 5 days (Deadline:08/12/2020). 
@@ -109,3 +109,5 @@ docker run -it image_name:tag_name
 
 - access price prediction page by */predict* (Use Postman)
 
+## Extension part
+- database application instead of csv file with the immo data

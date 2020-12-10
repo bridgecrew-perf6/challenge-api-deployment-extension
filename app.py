@@ -1,10 +1,12 @@
-import numpy as np
+import sqlite3
 import pandas as pd
-from flask import Flask, request, jsonify, render_template
-import pickle
+from flask import Flask, request, jsonify
+
 from pipeline.predict.prediction import predict
 from pipeline.preprocessing.cleaning_data import preprocess
-import pipeline.model as model
+
+
+
 
 app = Flask(__name__)
 

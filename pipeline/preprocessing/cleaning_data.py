@@ -1,15 +1,18 @@
+import sqlite3
 import pandas as pd
 import numpy as np
-import missingno as msno
+#import missingno as msno
 import re
+
+from pipeline.database.connect_immoDB import read_immo_table_TEST
 
 def define_province(new_df, code):
     if ((code >= 1000) & (code < 1299)):
-        new_df["province_Brussels Capital Region"] = 1
+        new_df["province_Brussels_Capital_Region"] = 1
     elif ((code >= 1300) & (code < 1499)):
-        new_df["province_Walloon Brabant"] = 1
+        new_df["province_Walloon_Brabant"] = 1
     elif (((code >= 1500) & (code < 1999)) | ((code >= 3000) & (code < 3499))):
-        new_df["province_Flemish Brabant"] = 1
+        new_df["province_Flemish_Brabant"] = 1
     elif ((code >= 2000) & (code < 2999)):
         new_df["province_Antwerp"] = 1
     elif ((code >= 3500) & (code < 3999)):
@@ -23,26 +26,26 @@ def define_province(new_df, code):
     elif ((code >= 6600) & (code < 6999)):
         new_df["province_Luxembourg"] = 1
     elif ((code >= 8000) & (code < 8999)):
-        new_df["province_West Flanders"] = 1
+        new_df["province_West_Flanders"] = 1
     elif ((code >= 9000) & (code < 9999)):
-        new_df["province_East Flanders"] = 1
+        new_df["province_East_Flanders"] = 1
 
     return new_df
 
 
 def define_property(new_df, type):
     if type == "HOUSE":
-        new_df["property-type_HOUSE"] = 1
+        new_df["property_type_HOUSE"] = 1
     elif type == "APARTMENT":
-        new_df["property-type_APARTMENT"] = 1
+        new_df["property_type_APARTMENT"] = 1
     elif type == "OTHERS":
-        new_df["property-type_OTHERS"] = 1
+        new_df["property_type_OTHERS"] = 1
     
     return new_df
 
 
 def preprocess(df):
-    mandatory = ["area", "property-type", "rooms-number", "zip-code"]
+    mandatory = ["area", "property_type", "rooms_number", "zip_code"]
 
     check_data = 0
     check_zip = 0
@@ -52,10 +55,10 @@ def preprocess(df):
         if m not in df.columns:
             check_data = 1
 
-    if df["property-type"].values[0] not in ["APARTMENT", "HOUSE", "OTHERS"]:
+    if df["property_type"].values[0] not in ["APARTMENT", "HOUSE", "OTHERS"]:
         check_type = 1
     
-    if df["zip-code"].values[0] < 1000 or df["zip-code"].values[0] >= 9999:
+    if df["zip_code"].values[0] < 1000 or df["zip_code"].values[0] >= 9999:
         check_zip = 1
 
     message = ""
@@ -72,13 +75,16 @@ def preprocess(df):
     
     if len(message) > 1:
         return message
-    
-    new_df = pd.read_csv("pipeline/preprocessing/test-dataframe.csv")
-    new_df.drop(["Unnamed: 0"], axis=1, inplace=True)
-    new_df = define_province(new_df, df["zip-code"].values[0])
-    new_df = define_property(new_df, df["property-type"].values[0])
 
-    columns = [column for column in df.columns if column not in ["property-type", "zip-code"]]
+## INSERTING DATA FROM THE DATABASE ##
+    df_HELP = read_immo_table_TEST
+    new_df = pd.DataFrame('df_HELP')
+#    new_df = pd.read_csv("pipeline/database/test-dataframe.csv")
+#    new_df.drop(["Unnamed: 0"], axis=1, inplace=True)
+    new_df = define_province(new_df, df["zip_code"].values[0])
+    new_df = define_property(new_df, df["property_type"].values[0])
+
+    columns = [column for column in df.columns if column not in ["property_type", "zip_code"]]
     new_df[columns] = df[columns]
     
     return new_df

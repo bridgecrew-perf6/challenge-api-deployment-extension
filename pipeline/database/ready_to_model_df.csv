@@ -1,4 +1,4 @@
-,property-type_HOUSE,property-type_OTHERS,property-type_APARTMENT,price,rooms-number,area,equipped-kitchen,furnished,terrace,garden,facades-number,province_Brussels Capital Region,province_Liège,province_Walloon Brabant,province_West Flanders,province_Flemish Brabant,province_Luxembourg,province_Antwerp,province_East Flanders,province_Hainaut,province_Limburg,province_Namur
+ID,property_type_HOUSE,property_type_OTHERS,property_type_APARTMENT,price,rooms_number,area,equipped_kitchen,furnished,terrace,garden,facades_number,province_Brussels_Capital_Region,province_Liège,province_Walloon_Brabant,province_West_Flanders,province_Flemish_Brabant,province_Luxembourg,province_Antwerp,province_East_Flanders,province_Hainaut,province_Limburg,province_Namur
 0,1,0,0,990000.0,6.0,485.0,1.0,0.0,0.0,1.0,2.0,1,0,0,0,0,0,0,0,0,0,0
 1,1,0,0,195000.0,3.0,242.0,1.0,1.0,0.0,1.0,3.0,0,1,0,0,0,0,0,0,0,0,0
 2,1,0,0,245000.0,5.0,142.0,1.0,1.0,0.0,1.0,4.0,0,1,0,0,0,0,0,0,0,0,0

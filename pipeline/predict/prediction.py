@@ -10,7 +10,7 @@ def predict(df):
     return: result -> predicted price
     """
     # ID column was added since in app.py the scalar dataset required an index #
-    df["ID"] = int(df["ID"])
+#    df["ID"] = int(df["ID"])
     df["property_type_HOUSE"] = int(df["property_type_HOUSE"])
     df["property_type_OTHERS"] = int(df["property_type_OTHERS"])
     df["property_type_APARTMENT"] = int(df["property_type_APARTMENT"])

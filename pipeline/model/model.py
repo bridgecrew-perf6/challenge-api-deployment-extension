@@ -20,12 +20,12 @@ from sklearn.metrics import mean_squared_error, r2_score, accuracy_score
 import pickle
 
 ## CALL THE TABLE FROM THE DATABASE ##
-df_HELP = read_immo_table
-df = pd.DataFrame('df_HELP')
+df_HELP = read_immo_table()
+df = pd.DataFrame(df_HELP)
 
 # df = pd.read_csv("pipeline/database/ready_to_model_df.csv")
 
-df_mandatory = df.filter(items=['ID', 'property_type_HOUSE', 'property_type_OTHERS',
+df_mandatory = df.filter(items=['property_type_HOUSE', 'property_type_OTHERS',
         'property_type_APARTMENT', 'rooms_number', 'area', 'equipped_kitchen',
         'furnished', 'terrace', 'garden', 'facades_number',
         'province_Brussels_Capital_Region', 'province_Liège', "price",

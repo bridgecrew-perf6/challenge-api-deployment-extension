@@ -21,9 +21,7 @@ def read_immo_table():
 
 
 #def read_immo_table_TEST():
-    """
-    This function reads the SQLite database and transforms it to a variable
-    """
+
 #    connection = sqlite3.connect('immo_data_TEST.db')
 #    cursor = connection.cursor()
 

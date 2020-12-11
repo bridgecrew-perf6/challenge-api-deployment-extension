@@ -87,7 +87,7 @@ def preprocess(df):
 #    new_df.drop(["Unnamed: 0"], axis=1, inplace=True)
 
 #    new_df.columns = ['property_type_HOUSE', 'property_type_OTHERS',
-    new_df.columns = ['ID', 'property_type_HOUSE', 'property_type_OTHERS',
+    new_df.columns = ['property_type_HOUSE', 'property_type_OTHERS',
         'property_type_APARTMENT', 'rooms_number', 'area', 'equipped_kitchen',
         'furnished', 'terrace', 'garden', 'facades_number',
         'province_Brussels_Capital_Region', 'province_Liège', "price",
@@ -98,7 +98,7 @@ def preprocess(df):
 
     new_df = define_province(new_df, df["zip_code"].values[0])
     new_df = define_property(new_df, df["property_type"].values[0])
-
+    print(new_df.columns)
     columns = [column for column in df.columns if column not in ["property_type", "zip_code"]]
     new_df[columns] = df[columns]
     

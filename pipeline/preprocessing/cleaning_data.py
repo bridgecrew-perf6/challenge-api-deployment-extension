@@ -4,7 +4,7 @@ import numpy as np
 #import missingno as msno
 import re
 
-from pipeline.database.connect_immoDB import read_immo_table_TEST
+#from pipeline.database.connect_immoDB import read_immo_table_TEST
 
 def define_province(new_df, code):
     if ((code >= 1000) & (code < 1299)):
@@ -79,14 +79,15 @@ def preprocess(df):
 #    cnx = sqlite3.connect('pipeline/database/immo_data_TEST.db')
 #    new_df = pd.read_sql_query("SELECT * FROM immoTEST", cnx)
     ## INSERTING DATA FROM THE DATABASE ##
-    df_HELP = read_immo_table_TEST()
-    new_df = pd.DataFrame(df_HELP)
+#    df_HELP = read_immo_table_TEST()
+#    new_df = pd.DataFrame(df_HELP)
 
 #    print(new_df.head())
-#    new_df = pd.read_csv("pipeline/database/test-dataframe.csv")
+    new_df = pd.read_csv("pipeline/database/test-dataframe.csv")
 #    new_df.drop(["Unnamed: 0"], axis=1, inplace=True)
 
-    new_df.columns = ['index', 'property_type_HOUSE', 'property_type_OTHERS',
+#    new_df.columns = ['property_type_HOUSE', 'property_type_OTHERS',
+    new_df.columns = ['ID', 'property_type_HOUSE', 'property_type_OTHERS',
         'property_type_APARTMENT', 'rooms_number', 'area', 'equipped_kitchen',
         'furnished', 'terrace', 'garden', 'facades_number',
         'province_Brussels_Capital_Region', 'province_Liège', "price",

@@ -20,14 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fbb7be0-f780-467b-a5f8-651e9d0b8228" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pipeline/database/DB_creation_csv_loading_01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/challenge-api-deployment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/challenge-api-deployment.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipeline/model/houseprice_model_mandatory.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipeline/model/model file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/database/connect_immoDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/database/connect_immoDB.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/database/immo_data.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/database/immo_data_TEST.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/model/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/model/model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pipeline/predict/prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/predict/prediction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipeline/preprocessing/clean_test.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pipeline/preprocessing/cleaning_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/preprocessing/cleaning_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipeline/preprocessing/cleaning_data_vers02.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +40,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="4ef14fcd-adcd-4011-9623-4bda929b0b41" />
   <component name="ProjectId" id="1lK0A7BpcUsv98DC6Jgc1LeP0xd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -44,10 +48,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pipeline/database" />
   </component>
-  <component name="RunManager">
-    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pipeline/database" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.app">
+    <configuration name="DB_creation_csv_loading_01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="challenge-api-deployment" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -55,10 +65,33 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pipeline/database" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pipeline/database/DB_creation_csv_loading_01.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="challenge-api-deployment" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -71,6 +104,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.app" />
+        <item itemvalue="Python.DB_creation_csv_loading_01" />
       </list>
     </recent_temporary>
   </component>
@@ -82,8 +116,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607330329145</updated>
+      <workItem from="1607673201514" duration="3657000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -96,5 +134,35 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1968" y="410" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607676691053">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1968" y="410" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1607676691053" />
+    <state width="1286" height="373" key="GridCell.Tab.0.bottom" timestamp="1607676717680">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1286" height="373" key="GridCell.Tab.0.bottom/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1607676717680" />
+    <state width="889" height="89" key="GridCell.Tab.0.bottom/67.27.1299.741/1366.0.1920.1080@67.27.1299.741" timestamp="1607673669113" />
+    <state width="1286" height="373" key="GridCell.Tab.0.center" timestamp="1607676717680">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1286" height="373" key="GridCell.Tab.0.center/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1607676717680" />
+    <state width="889" height="89" key="GridCell.Tab.0.center/67.27.1299.741/1366.0.1920.1080@67.27.1299.741" timestamp="1607673669111" />
+    <state width="1286" height="373" key="GridCell.Tab.0.left" timestamp="1607676717680">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1286" height="373" key="GridCell.Tab.0.left/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1607676717680" />
+    <state width="889" height="89" key="GridCell.Tab.0.left/67.27.1299.741/1366.0.1920.1080@67.27.1299.741" timestamp="1607673669110" />
+    <state width="1286" height="373" key="GridCell.Tab.0.right" timestamp="1607676717680">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1286" height="373" key="GridCell.Tab.0.right/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1607676717680" />
+    <state width="889" height="89" key="GridCell.Tab.0.right/67.27.1299.741/1366.0.1920.1080@67.27.1299.741" timestamp="1607673669113" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/challenge_api_deployment_extension$DB_creation_csv_loading_01.coverage" NAME="DB_creation_csv_loading_01 Coverage Results" MODIFIED="1607676693078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pipeline/database" />
+    <SUITE FILE_PATH="coverage/challenge_api_deployment_extension$app.coverage" NAME="app Coverage Results" MODIFIED="1607676717670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

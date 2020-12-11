@@ -40,6 +40,7 @@ def predict_api():
     """
     if request.method == "POST":
         data = request.get_json()
+#        dataset = pd.DataFrame(data)
         dataset = pd.DataFrame(data, index=[0, ])
         dataset.replace(True, int(1), inplace=True)
         dataset.replace(False, int(0), inplace=True)
@@ -58,11 +59,11 @@ def predict_api():
             return jsonify(message)
     elif request.method == "GET":
         message = "The page accept a POST request of data in following format:\n"
-        data = "<p>{<br>area': int,<br>'property-type': 'APARTMENT' | 'HOUSE' \
-            | 'OTHERS',<br>'rooms-number': int,<br>'zip-code': int,<br>'garden'\
-            : Optional[bool],<br>'equipped-kitchen': Optional[bool],<br>\
+        data = "<p>{<br>area': int,<br>'property_type': 'APARTMENT' | 'HOUSE' \
+            | 'OTHERS',<br>'rooms_number': int,<br>'zip_code': int,<br>'garden'\
+            : Optional[bool],<br>'equipped_kitchen': Optional[bool],<br>\
             'furnished': Opional[bool],<br>'terrace': Optional[bool],<br>\
-            'facades-number': Optional[int]<br>}"
+            'facades_number': Optional[int]<br>}"
         
         return (message+data)
 

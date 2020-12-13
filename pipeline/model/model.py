@@ -24,11 +24,10 @@ df_HELP = read_immo_table()
 df = pd.DataFrame(df_HELP)
 
 # df = pd.read_csv("pipeline/database/ready_to_model_df.csv")
-
 df_mandatory = df.filter(items=['property_type_HOUSE', 'property_type_OTHERS',
-        'property_type_APARTMENT', 'rooms_number', 'area', 'equipped_kitchen',
+        'property_type_APARTMENT', 'price', 'rooms_number', 'area', 'equipped_kitchen',
         'furnished', 'terrace', 'garden', 'facades_number',
-        'province_Brussels_Capital_Region', 'province_Liège', "price",
+        'province_Brussels_Capital_Region', 'province_Liège',
         'province_Walloon_Brabant', 'province_West_Flanders',
         'province_Flemish_Brabant', 'province_Luxembourg', 'province_Antwerp',
         'province_East_Flanders', 'province_Hainaut', 'province_Limburg',

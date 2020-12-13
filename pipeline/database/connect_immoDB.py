@@ -14,22 +14,4 @@ def read_immo_table():
 
     connection.close()
 
-
-    ## RETURN THE TABLE TO THE CALLING FILE ##
-    ##########################################
     return immo_table
-
-
-#def read_immo_table_TEST():
-
-#    connection = sqlite3.connect('immo_data_TEST.db')
-#    cursor = connection.cursor()
-
-#    cursor.execute("SELECT * FROM immoTEST")
-#    immo_table_TEST = [row for row in cursor.fetchall()]
-
-#    connection.close()
-
-    ## RETURN THE TABLE TO THE CALLING FILE ##
-    ##########################################
-#    return immo_table_TEST

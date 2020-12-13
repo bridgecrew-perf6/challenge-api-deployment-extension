@@ -23,7 +23,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pipeline/database/DB_creation_csv_loading_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/database/DB_creation_csv_loading_01.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pipeline/database/connect_immoDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/database/connect_immoDB.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/database/csv_to_SQLite_conversion_01.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/database/csv_to_SQLite_conversion_02.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/database/csv_to_SQLite_conversion_test.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pipeline/database/immo_data.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/model/immo_data.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pipeline/model/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/model/model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pipeline/predict/prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/predict/prediction.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pipeline/preprocessing/cleaning_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/preprocessing/cleaning_data.py" afterDir="false" />
@@ -45,14 +49,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pipeline/database" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/pipeline/database" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.model">
+  <component name="RunManager" selected="Python.app">
     <configuration name="DB_creation_csv_loading_01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="challenge-api-deployment" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -121,9 +125,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.model" />
         <item itemvalue="Python.app" />
         <item itemvalue="Python.DB_creation_csv_loading_01" />
+        <item itemvalue="Python.model" />
       </list>
     </recent_temporary>
   </component>
@@ -136,6 +140,8 @@
       <option name="presentableId" value="Default" />
       <updated>1607330329145</updated>
       <workItem from="1607673201514" duration="7601000" />
+      <workItem from="1607681172815" duration="18053000" />
+      <workItem from="1607780515986" duration="238000" />
     </task>
     <servers />
   </component>
@@ -155,39 +161,43 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="474" y="308" width="380" height="345" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607679886027">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="1968" y="410" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1607676691053" />
-    <state x="474" y="308" width="380" height="345" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741/1366.0.1920.1080@67.27.1299.741" timestamp="1607679886027" />
-    <state width="1253" height="192" key="GridCell.Tab.0.bottom" timestamp="1607680809223">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state width="1286" height="373" key="GridCell.Tab.0.bottom/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1607677688692" />
-    <state width="1253" height="192" key="GridCell.Tab.0.bottom/67.27.1299.741/1366.0.1920.1080@67.27.1299.741" timestamp="1607680809223" />
-    <state width="1253" height="192" key="GridCell.Tab.0.center" timestamp="1607680809223">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state width="1286" height="373" key="GridCell.Tab.0.center/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1607677688692" />
-    <state width="1253" height="192" key="GridCell.Tab.0.center/67.27.1299.741/1366.0.1920.1080@67.27.1299.741" timestamp="1607680809223" />
-    <state width="1253" height="192" key="GridCell.Tab.0.left" timestamp="1607680809223">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state width="1286" height="373" key="GridCell.Tab.0.left/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1607677688691" />
-    <state width="1253" height="192" key="GridCell.Tab.0.left/67.27.1299.741/1366.0.1920.1080@67.27.1299.741" timestamp="1607680809223" />
-    <state width="1253" height="192" key="GridCell.Tab.0.right" timestamp="1607680809223">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state width="1286" height="373" key="GridCell.Tab.0.right/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1607677688692" />
-    <state width="1253" height="192" key="GridCell.Tab.0.right/67.27.1299.741/1366.0.1920.1080@67.27.1299.741" timestamp="1607680809223" />
-    <state x="2086" y="297" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1607676921945">
+    <state x="2027" y="336" width="380" height="345" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607715307348">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state x="2086" y="297" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1607676921945" />
+    <state x="2027" y="336" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1607715307347" />
+    <state x="474" y="308" width="380" height="345" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741/1366.0.1920.1080@67.27.1299.741" timestamp="1607685054577" />
+    <state x="499" y="155" width="424" height="484" key="FileChooserDialogImpl" timestamp="1607696626890">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="499" y="155" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741/1366.0.1920.1080@67.27.1299.741" timestamp="1607696626890" />
+    <state width="1874" height="251" key="GridCell.Tab.0.bottom" timestamp="1607780753339">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="251" key="GridCell.Tab.0.bottom/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1607780753339" />
+    <state width="1253" height="192" key="GridCell.Tab.0.bottom/67.27.1299.741/1366.0.1920.1080@67.27.1299.741" timestamp="1607694714925" />
+    <state width="1874" height="251" key="GridCell.Tab.0.center" timestamp="1607780753339">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="251" key="GridCell.Tab.0.center/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1607780753339" />
+    <state width="1253" height="192" key="GridCell.Tab.0.center/67.27.1299.741/1366.0.1920.1080@67.27.1299.741" timestamp="1607694714925" />
+    <state width="1874" height="251" key="GridCell.Tab.0.left" timestamp="1607780753339">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="251" key="GridCell.Tab.0.left/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1607780753339" />
+    <state width="1253" height="192" key="GridCell.Tab.0.left/67.27.1299.741/1366.0.1920.1080@67.27.1299.741" timestamp="1607694714925" />
+    <state width="1874" height="251" key="GridCell.Tab.0.right" timestamp="1607780753339">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="251" key="GridCell.Tab.0.right/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1607780753339" />
+    <state width="1253" height="192" key="GridCell.Tab.0.right/67.27.1299.741/1366.0.1920.1080@67.27.1299.741" timestamp="1607694714925" />
+    <state x="2086" y="297" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1607715411935">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2086" y="297" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1607715411935" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/challenge_api_deployment_extension$model.coverage" NAME="model Coverage Results" MODIFIED="1607680034356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pipeline/model" />
-    <SUITE FILE_PATH="coverage/challenge_api_deployment_extension$DB_creation_csv_loading_01.coverage" NAME="DB_creation_csv_loading_01 Coverage Results" MODIFIED="1607679893716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pipeline/database" />
-    <SUITE FILE_PATH="coverage/challenge_api_deployment_extension$app.coverage" NAME="app Coverage Results" MODIFIED="1607679929616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/challenge_api_deployment_extension$DB_creation_csv_loading_01.coverage" NAME="DB_creation_csv_loading_01 Coverage Results" MODIFIED="1607715318254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pipeline/database" />
+    <SUITE FILE_PATH="coverage/challenge_api_deployment_extension$app.coverage" NAME="app Coverage Results" MODIFIED="1607780525931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

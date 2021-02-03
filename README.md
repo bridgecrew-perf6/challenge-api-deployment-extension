@@ -7,7 +7,8 @@ The project was done by [Davy Nimbona](https://github.com/davymariko) (team lead
 
 ### Goal:
 
-In that project we have created a prediction model to predict new selling prices for the new properties according to our dataset. The real estate data has been scrapped, celeaned and analized in our previous projects. The goal of this project is creating an API to get an new property input and return a price as output. The API Wrapped by a Docker file and deployed by Heroku.
+In that project we have created a prediction model to predict new selling prices for the new properties according to our dataset. The real estate data has been scrapped, celeaned and analized in our previous projects. The goal of this project is creating an API to get an new property input and return a price as output. The API Wrapped by a Docker file and deployed by Heroku. 
+EXTENSION: This project is an extension because it was improved for deployment and instead of csv files, we made use of SQLite Database files. As such we were learning how to use, to create and consult a Database
 
 ### The input:
 ```json
